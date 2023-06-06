@@ -1,0 +1,36 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://nguyen_viet_hung@bitbucket.org/nguyen_viet_hung/api.git"
+  },
+  "author": "HungNguyen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://bitbucket.org/nguyen_viet_hung/api/issues"
+  },
+  "homepage": "https://bitbucket.org/nguyen_viet_hung/api#readme",
+  "dependencies": {
+    "@google-cloud/local-auth": "^2.1.0",
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "googleapis": "^105.0.0",
+    "gridfs-stream": "^1.1.1",
+    "http": "0.0.1-security",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.3.3",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.4",
+    "multer-gridfs-storage": "^5.0.2",
+    "socket.io": "^4.5.3"
+  }
+}
