@@ -5,13 +5,13 @@ import mongoose from 'mongoose';
 import logger from 'morgan';
 import cors from 'cors';
 
-// import mainRoutes from './routes/main.js';
-// import uploadRoutes from './routes/upload.js';
-// import userRoutes from './routes/user.js';
-// import realestateRoutes from './routes/realestate.route.js';
-// import reBookingsRoutes from './routes/reBookings.route.js';
-// import reReviewsRoutes from './routes/reReviews.route.js';
-// import reInvoiceRoutes from './routes/reInvoice.route.js';
+import mainRoutes from './routes/main.js';
+import uploadRoutes from './routes/upload.js';
+import userRoutes from './routes/user.js';
+import realestateRoutes from './routes/realestate.route.js';
+import reBookingsRoutes from './routes/reBookings.route.js';
+import reReviewsRoutes from './routes/reReviews.route.js';
+import reInvoiceRoutes from './routes/reInvoice.route.js';
 
 import { Server } from "socket.io";
 import { createServer } from 'http';
@@ -36,13 +36,13 @@ mongoose.connect(URLDATABASE, { useNewUrlParser: true, useUnifiedTopology: true 
   });
 
 // set up route
-// app.use('/api', mainRoutes);
-// app.use('/api', uploadRoutes);
-// app.use('/api', userRoutes);
-// app.use('/api', realestateRoutes);
-// app.use('/api', reBookingsRoutes);
-// app.use('/api', reReviewsRoutes);
-// app.use('/api', reInvoiceRoutes);
+app.use('/api', mainRoutes);
+app.use('/api', uploadRoutes);
+app.use('/api', userRoutes);
+app.use('/api', realestateRoutes);
+app.use('/api', reBookingsRoutes);
+app.use('/api', reReviewsRoutes);
+app.use('/api', reInvoiceRoutes);
 
 app.get('/', (req, res) => {
   res.status(200).json('Welcome to MYLIFE - API');
